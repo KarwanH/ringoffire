@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { CommonModule, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-game',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './game.component.html',
-  styleUrl: './game.component.scss'
+  styleUrl: './game.component.scss',
 })
 export class GameComponent {
-
+  pickCardAnimation = false;
+  takeCard() {
+    this.pickCardAnimation = true;
+  }
 }
