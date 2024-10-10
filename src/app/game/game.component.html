@@ -7,7 +7,20 @@
       alt=""
     />
 
-    <img (click)="takeCard()" class="top-card" [ngStyle]="{'right.px': 25 }"src="../../assets/img/cards/card_cover.png" alt="" />
-    <img (click)="takeCard()" *ngIf="pickCardAnimation" class="pick-card" [ngStyle]="{'right.px': 25 }"src="../../assets/img/cards/ace_1.png" alt="" />
+    <img
+      (click)="takeCard()"
+      class="top-card"
+      [ngStyle]="{ 'right.px': 25 }"
+      src="../../assets/img/cards/card_cover.png"
+      alt=""
+    />
+    <img
+      (click)="takeCard()"
+      *ngIf="pickCardAnimation"
+      class="pick-card"
+      [ngStyle]="{ 'right.px': 25 }"
+      src="../../assets/img/cards/{{currentCard}}.png"
+      alt=""
+    />
   </div>
 </div>
